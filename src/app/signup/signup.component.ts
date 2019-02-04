@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  Email } from './email'
 
 @Component({
   selector: 'app-signup',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  mail = 'mouraud.lucas@gmail.com';
+  mail: Email = {
+    id: 1,
+    value: 'example.mail@gmail.com'
+  };
   constructor() { }
 
   ngOnInit() {
